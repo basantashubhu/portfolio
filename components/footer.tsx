@@ -1,4 +1,5 @@
-import { AiOutlineGithub } from "react-icons/ai"
+import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai"
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -6,7 +7,12 @@ const Footer = () => {
             <div className="text-slate-400">
                 Designed and built by Basanta
                 <div className={'flex justify-center'}>
-                    <AiOutlineGithub size={24}/>
+                    <Link href={'https://github.com/basantashubhu'}>
+                        <a><AiOutlineGithub size={24}/></a>
+                    </Link>
+                    <Link href={'https://www.linkedin.com/in/basanta-tajpuriya-792574221/'}>
+                        <a><AiFillLinkedin size={24}/></a>
+                    </Link>
                 </div>
             </div>
         </div>

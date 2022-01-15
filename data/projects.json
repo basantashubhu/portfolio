@@ -1,0 +1,23 @@
+{
+    "status" : "ok",
+    "data" : [
+        {
+            "slug" : "content-management-system",
+            "title" : "Content Management System",
+            "desc" : "A content management system",
+            "long_desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus ea eum iusto natus nulla pariatur quo unde! Accusantium cupiditate dicta dolores eum maxime, molestiae omnis placeat porro saepe sit velit veritatis vitae voluptas? Assumenda et exercitationem fugiat illo illum incidunt iure nobis non odit perspiciatis, repellat saepe similique voluptate.",
+            "images" : [
+                "/coding.png"
+            ]
+        },
+        {
+            "slug" : "live-quiz",
+            "title" : "Live Quiz",
+            "desc" : "A live quiz website",
+            "long_desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus ea eum iusto natus nulla pariatur quo unde! Accusantium cupiditate dicta dolores eum maxime, molestiae omnis placeat porro saepe sit velit veritatis vitae voluptas? Assumenda et exercitationem fugiat illo illum incidunt iure nobis non odit perspiciatis, repellat saepe similique voluptate.",
+            "images" : [
+                "/youtube.png"
+            ]
+        }
+    ]
+}
