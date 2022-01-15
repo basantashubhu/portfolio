@@ -20,8 +20,7 @@ const ProjectDetail = ({project} : {project?: Project}) => {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch(`${ process.env.APP_URL }/api/projects`)
-    const data : Project[] = await res.json()
+    const data : Project[] = staticProjects.data
     const paths : object[] = data.map(project => ({params : {slug : project.slug}}))
     return {paths, fallback : true}
 }
@@ -29,8 +28,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context : any) {
     let project : Project|null = null
     try {
-        const res = await fetch(`${ process.env.APP_URL }/api/projects/${context.params.slug}`)
-        project = await res.json()
+        project = staticProjects.data.filter(project => project.slug === context.params.slug)[0]
     } catch (e) {}
     return {props : {project}}
 }

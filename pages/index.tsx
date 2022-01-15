@@ -27,8 +27,7 @@ const Home = ({projects} : {projects : Project[]}) => {
 }
 
 export async function getStaticProps() {
-    const res = await fetch(`${ process.env.APP_URL }/api/projects`)
-    const projects : Project[] = await res.json()
+    const projects : Project[] = staticProjects.data
     return {props : {projects}}
 }
 
