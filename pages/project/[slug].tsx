@@ -1,18 +1,13 @@
-import {NextPage} from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
 import staticProjects from '../../data/projects.json'
-import {useRouter} from 'next/router'
 import {Project} from '../../types/Project'
 import Header from '../../components/Header'
-import Profile from '../../components/Profile'
-import Education from '../../components/Education'
 import Footer from '../../components/footer'
-import ProjectList from '../../components/ProjectList'
 import Layout from '../../components/Layout'
 import ProjectDescription from '../../components/ProjectDescription'
+import NotFound404 from '../../components/NotFound404'
 
-const ProjectDetail = ({project} : {project: Project}) => {
+const ProjectDetail = ({project} : {project?: Project}) => {
+    if (!project) return <NotFound404 />
     return (
         <Layout>
             <div className="max-w-md m-auto flex flex-col gap-5">
@@ -25,15 +20,19 @@ const ProjectDetail = ({project} : {project: Project}) => {
 }
 
 export async function getStaticPaths() {
-    const data : Project[] = staticProjects.data
+    const res = await fetch(`${ process.env.APP_URL }/api/projects`)
+    const data : Project[] = await res.json()
     const paths : object[] = data.map(project => ({params : {slug : project.slug}}))
     return {paths, fallback : true}
 }
 
 export async function getStaticProps(context : any) {
-    const projects : Project[] = staticProjects.data
-    const project : Project[] = projects.filter(project => project.slug === context.params.slug)
-    return {props : {project : project[0]}}
+    let project : Project|null = null
+    try {
+        const res = await fetch(`${ process.env.APP_URL }/api/projects/${context.params.slug}`)
+        project = await res.json()
+    } catch (e) {}
+    return {props : {project}}
 }
 
 export default ProjectDetail
