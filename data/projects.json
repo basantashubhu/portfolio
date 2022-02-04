@@ -16,7 +16,7 @@
             "desc" : "Explore the world of crypto, and start sending crypto to anyone.",
             "long_desc" : "<br><a href='https://crypto-madbasanta.vercel.app/' target='_blank' rel='noopener noreferer'>https://crypto-madbasanta.vercel.app</a><br><br>Explore the world of crypto, and start sending crypto to anyone. You can transfer your ethereum coin to anyone just by linking your metamask account from the extension. You need to have metamask extension installed in your browser. Built with react & tailwind css.",
             "images" : [
-                "/dcryptoLanding.jpg"
+                "/dcryptoLanding.JPG"
             ]
         },
         {
