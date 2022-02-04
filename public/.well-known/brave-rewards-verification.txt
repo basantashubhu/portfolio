@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: portfolio-basantashubhu.vercel.app
+Token: 70c9c48240b2a6f6a00ece735c49e65bcc4d56d7a390068d827f597965a43506
