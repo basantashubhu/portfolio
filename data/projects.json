@@ -2,21 +2,39 @@
     "status" : "ok",
     "data" : [
         {
-            "slug" : "content-management-system",
-            "title" : "Content Management System",
-            "desc" : "A content management system",
-            "long_desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus ea eum iusto natus nulla pariatur quo unde! Accusantium cupiditate dicta dolores eum maxime, molestiae omnis placeat porro saepe sit velit veritatis vitae voluptas? Assumenda et exercitationem fugiat illo illum incidunt iure nobis non odit perspiciatis, repellat saepe similique voluptate.",
+            "slug" : "node-framework",
+            "title" : "Tiny MVC Framework for NODEJS with ExpressJS",
+            "desc" : "Explore the power of NODEJS without wasting time thinking on coding stack.",
+            "long_desc" : "<br><a href='https://github.com/basantashubhu/node-framework.git' target='_blank' rel='noopener noreferer'>https://github.com/basantashubhu/node-framework.git</a><br><br>Explore the power of NODEJS without wasting time thinking on coding stack. It's a tiny framework built with express, multer using typescript. This repository is helpful for college students and is publicly available on github to fork.",
             "images" : [
-                "/coding.png"
+                "/framework.png"
             ]
         },
         {
-            "slug" : "live-quiz",
-            "title" : "Live Quiz",
-            "desc" : "A live quiz website",
-            "long_desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus ea eum iusto natus nulla pariatur quo unde! Accusantium cupiditate dicta dolores eum maxime, molestiae omnis placeat porro saepe sit velit veritatis vitae voluptas? Assumenda et exercitationem fugiat illo illum incidunt iure nobis non odit perspiciatis, repellat saepe similique voluptate.",
+            "slug" : "ethereum-transaction",
+            "title" : "dCrypto | Sent crypto Across the world",
+            "desc" : "Explore the world of crypto, and start sending crypto to anyone.",
+            "long_desc" : "<br><a href='https://crypto-madbasanta.vercel.app/' target='_blank' rel='noopener noreferer'>https://crypto-madbasanta.vercel.app</a><br><br>Explore the world of crypto, and start sending crypto to anyone. You can transfer your ethereum coin to anyone just by linking your metamask account from the extension. You need to have metamask extension installed in your browser. Built with react & tailwind css.",
+            "images" : [
+                "/dcryptoLanding.jpg"
+            ]
+        },
+        {
+            "slug" : "live-quiz-website",
+            "title" : "Live Quiz Website",
+            "desc" : "A live quiz website for college assignment",
+            "long_desc" : "Aim of this project is to simplify the process of learning by adding little bit of fun and reward during learning phase specially made for LokSewa students. The website has basic functionalities like subscribing to favorite topic, search quiz, play quiz and earn, history and more.",
             "images" : [
                 "/youtube.png"
+            ]
+        },
+        {
+            "slug" : "infectious-disease-control",
+            "title" : "Infectious Disease Control",
+            "desc" : "web application that provide every information about infectious disease and health resources",
+            "long_desc" : "web application that provide every information about infectious disease and health resources",
+            "images" : [
+                "/lady-bug.jpg"
             ]
         }
     ]

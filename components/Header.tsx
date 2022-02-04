@@ -12,15 +12,23 @@ const Header = () => {
             <div className="text-gray-500">FullStack Web Developer</div>
             <div className={'flex justify-center gap-4 text-gray-500 text-sm'}>
                 <div className="flex gap-1 items-center">
-                    <BsTelephone size={16} />
-                    <Link href={'tel:+9779817916444'}>
-                        <a>(+977) 9817916444</a>
-                    </Link>
-                </div>
-                <div className="flex gap-1 items-center">
                     <AiOutlineMail size={16}/>
                     <Link href={'mailto:callmebasanta44@gmail.com'}>
                         <a>callmebasanta44@gmail.com</a>
+                    </Link>
+                </div>
+            </div>
+            <div className={'flex justify-center gap-4 text-gray-500 text-sm'}>
+                <div className="flex gap-1 items-center">
+                    <BsTelephone size={16} />
+                    <Link href={'tel:+9779862900334'}>
+                        <a>(+977) 9862900334</a>
+                    </Link>
+                </div>
+                <div className="flex gap-1 items-center">
+                    <BsTelephone size={16} />
+                    <Link href={'tel:+9779817916444'}>
+                        <a>(+977) 9817916444</a>
                     </Link>
                 </div>
             </div>

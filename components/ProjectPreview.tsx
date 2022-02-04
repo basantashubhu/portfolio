@@ -6,8 +6,10 @@ const ProjectPreview = ({project, className} : {project : Project, className ?: 
     const {slug, title, desc, images} = project
     return (
         <div className={'flex gap-4 ' + className}>
-            <div className={'relative w-24 h-16'}>
-                <Image src={images[0]} layout={'fill'}/>
+            <div>
+                <div className={'relative w-24 h-16'}>
+                    <Image src={images[0]} layout={'fill'}/>
+                </div>
             </div>
             <div className={'my-auto'}>
                 <Link href={'/project/' + slug}>

@@ -21,7 +21,7 @@ const Education = () => {
                     <div className={'mt-4'}>
                         <p className={'font-semibold'}>High School</p>
                         <p className={'font-bold'}>Model Campus Damak</p>
-                        <small>2014 - 2015</small>
+                        <small>2014 - 2016</small>
                     </div>
                 </div>
                 <div className={'relative w-16 h-16'}>
