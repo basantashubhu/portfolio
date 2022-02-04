@@ -12,7 +12,7 @@ const Education = () => {
                     <p className={'font-bold'}>Softwarica college of IT and E-commerce</p>
                     <small>2016 - 2021</small>
                 </div>
-                <div className={'relative flex-1 h-8'}>
+                <div className={'relative flex-1 h-8 hidden md:block'}>
                     <Image src={softwaricaImg} layout={'fill'} />
                 </div>
             </div>
@@ -24,7 +24,7 @@ const Education = () => {
                         <small>2014 - 2016</small>
                     </div>
                 </div>
-                <div className={'relative w-16 h-16'}>
+                <div className={'relative w-16 h-16 hidden md:block'}>
                     <Image src={modelcampusImg} layout={'fill'} />
                 </div>
             </div>

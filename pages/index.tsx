@@ -10,17 +10,21 @@ import staticProjects from '../data/projects.json'
 const Home = ({projects} : {projects : Project[]}) => {
     return (
         <Layout>
-            <div className="max-w-md m-auto mr-0 flex flex-col gap-5">
-                <Header/>
-                <div>
-                    <Profile/>
-                    <br/>
-                    <Education/>
+            <div className="xl:w-1/2 lg:w-2/3 md:w-full m-auto">
+                <div className="px-3">
+                    <Header/>
+                    <div className="md:flex-row flex-col flex gap-5">
+                        <div className="w-full md:w-1/2">
+                            <Profile/>
+                            <br/>
+                            <Education/>
+                        </div>
+                        <div className="w-full md:w-1/2">
+                            <ProjectList projects={projects} />
+                        </div>
+                    </div>
+                    <Footer/>
                 </div>
-                <Footer/>
-            </div>
-            <div className="max-w-md m-auto ml-0">
-                <ProjectList projects={projects} />
             </div>
         </Layout>
     )
